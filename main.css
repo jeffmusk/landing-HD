@@ -1,0 +1,174 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+nav {
+  margin: auto;
+  display: flex;
+  padding: 10px 80px;
+  max-width: 1400px;
+}
+
+nav img {
+  display: flex;
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav ul li {
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+nav #btn-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  flex-direction: row;
+}
+
+nav .btn {
+  display: flex;
+  margin-right: 12px;
+  border-radius: 8px;
+  padding: 5px 15px;
+  border: none;
+  justify-content: center;
+  align-content: center;
+}
+
+nav .btn img {
+  height: 20px;
+  margin-right: 8px;
+}
+nav .btn p {
+  align-self: center;
+  justify-self: center;
+  color: rgba(63, 63, 63, 1);
+  font-weight: 700;
+}
+
+#phone-call {
+  background-color: #fff;
+  border: solid 2px rgb(192, 192, 192);
+}
+
+#whatsapp-btn {
+  background-color: rgba(0, 157, 0, 1);
+  border: solid 2px rgba(166, 166, 166, 1);
+}
+
+#whatsapp-btn p {
+  color: white;
+}
+
+header {
+  display: flex;
+}
+
+header #img-header {
+  max-width: 55%;
+  margin-top: -60px;
+}
+header #form-container {
+  display: flex;
+  margin: 72px 200px 0px -100px;
+  flex-direction: column;
+  align-content: flex-end;
+
+  /*  justify-content: center; */
+}
+
+header #form-container .form {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-container h2 {
+  color: rgba(255, 84, 37, 1);
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.line-gray {
+  color: rgba(221, 221, 221, 1);
+  width: 100%;
+}
+
+#form-container h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  margin-top: 24px;
+}
+
+.form input {
+  border-radius: 80px;
+  border: solid 1px #c4c4c4;
+  padding: 8px 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  font-family: "Montserrat";
+}
+
+.form input::placeholder {
+  color: #c4c4c4;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.text-orange {
+  color: #ff5425;
+  font-weight: 600;
+}
+
+#terminos {
+  width: 80%;
+  margin: auto;
+  font-weight: 400;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 10px;
+}
+
+#enviar {
+  border-radius: 0px;
+  background: #ff5425;
+  color: white;
+  font-weight: 600;
+  width: 30%;
+  padding: 15px;
+  margin: auto;
+  border-radius: 8px;
+  border: none;
+}
+
+.terminos-text {
+  margin-top: 0px;
+}
+
+#icon-terms {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
