@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <nav>
+    <!-- <nav>
         <img src="./img/logo-1.png" alt="Hair doctors" id="logo">
         <ul>
             <li>Nuestros trasplantes</li>
@@ -36,21 +36,65 @@
                 <p>WhatsApp</p>
             </button>
         </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="./img/logo-1.png" alt="Hair doctors" id="logo"></a>
+        <div id="btn-contacts">
+
+
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item  ">
+                    <a class="nav-link" href="#carouselExampleControls">Nuestros trasplantes <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item  ">
+                    <a class="nav-link" href="#carrusel2">Nuestros tratamientos </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Testimonios </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Contáctanos </a>
+                </li>
+                <li class="nav-item active " class="icon-llamanos">
+                    <button class="btn" id="phone-call"> <img src="./img/phone.png">
+                        <p>Llámanos</p>
+                    </button>
+                </li>
+                <li class="nav-item ">
+                    <button class="btn" id="whatsapp-btn"> <img src="./img/whatsapp.png" alt="">
+                        <p>WhatsApp</p>
+                    </button>
+                </li>
+
+
+            </ul>
+        </div>
     </nav>
+
+
+
     <header class="container-fluid">
         <div class="row">
-            <img src="./img/banner1.png" alt="" id="img-header-1" class="col-6">
-            <div id="form-container">
-                <div class="form1 col-6">
-                    <h2>Con nuestra ayuda recuperarás mucho más que tu pelo</h2>
+            <img src="./img/banner1.png" alt="" id="img-header" class="col-md-6 col-12 pl-0 img-fluid">
+            <div id="form-container col-md-4 col-12 ">
+                <div class="form ">
+                    <h2 class="title-orange-h2">Con nuestra ayuda recuperarás <br> mucho más que tu pelo</h2>
                     <hr class="line-gray">
-                    <h3>Realiza tu consulta</h3>
+                    <h3 id="title-orange-h3">Realiza tu consulta</h3>
                     <input type="text" name="last-name" placeholder="Nombre completo">
                     <input type="email" name="email" placeholder="E-mail">
                     <input type="phone" name="phone" placeholder="Teléfono">
                     <div id="terminos">
                         <img src="./img/check.png" alt="" id="icon-terms">
-                        <p class="terminos-text"> Acepto los <span class="text-orange">términos y condiciones</span> y
+                        <p class="terminos-text"> Acepto los <span class="text-orange">términos y condiciones</span>
+                            y
                             autorizo el tratamiento de datos personales.</p>
                     </div>
                     <input type="submit" value="Enviar" id="enviar">
@@ -58,191 +102,361 @@
             </div>
         </div>
     </header>
-
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div id="slide">
-                    <div id="case">
-                        <div class="part1">
-                            <div class="puntos">
-                                <div class="punto point-active"></div>
-                                <div class="punto"></div>
-                                <div class="punto"></div>
-                                <div class="punto"></div>
+    <div class="container-fluid">
+        <!-- carruseles -->
+        <div class="row">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div id="slide">
+                            <div id="case">
+                                <div class="row">
+                                    <div class="part1 col-12 col-md-6">
+                                        <div class="puntos">
+                                            <div class="punto point-active"></div>
+                                            <div class="punto"></div>
+                                            <div class="punto"></div>
+                                            <div class="punto"></div>
+                                        </div>
+                                        <div class="title-orange">Nuestros trasplantes</div>
+                                        <div class="title-case">Trasplante capilar de pelo FUE</div>
+                                        <div class="content-text">
+                                            El trasplante de unidades foliculares es un procedimiento ambulatorio y con
+                                            anestesia local.
+                                        </div>
+                                        <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png"
+                                                alt="arrow">
+                                        </a>
+                                    </div>
+                                    <div class="part2 col-12 col-md-6">
+                                        <img src="./img/t1.png" alt="Trasplante de pelo">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="title-orange">Nuestros trasplantes</div>
-                            <div class="title-case">Trasplante capilar de pelo FUE</div>
-                            <div class="content-text">
-                                El trasplante de unidades foliculares es un procedimiento ambulatorio y con
-                                anestesia local.
-                            </div>
-                            <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png" alt="arrow"> </a>
                         </div>
-                        <div class="part2">
-                            <img src="./img/t1.png" alt="Trasplante de pelo">
+                    </div>
+
+                    <div class="carousel-item ">
+                        <div id="slide">
+                            <div id="case">
+                                <div class="row">
+                                    <div class="part1 col-12 col-md-6">
+                                        <div class="puntos">
+                                            <div class="punto"></div>
+                                            <div class="punto point-active"></div>
+                                            <div class="punto"></div>
+                                            <div class="punto"></div>
+                                        </div>
+                                        <div class="title-orange">Nuestros trasplantes</div>
+                                        <div class="title-case">Trasplante de barba</div>
+                                        <div class="content-text">
+                                            Luce una barba como siempre la has deseado de forma natural y definitiva
+                                        </div>
+                                        <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png"
+                                                alt="arrow">
+                                        </a>
+                                    </div>
+                                    <div class="part2 col-md-6">
+                                        <img src="./img/t2.png" alt="Trasplante de pelo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+                        <div id="slide">
+                            <div id="case" class="row">
+                                <div class="part1  col-12 col-md-6">
+                                    <div class="puntos">
+                                        <div class="punto "></div>
+                                        <div class="punto"></div>
+                                        <div class="punto point-active"></div>
+                                        <div class="punto"></div>
+                                    </div>
+                                    <div class="title-orange">Nuestros trasplantes</div>
+                                    <div class="title-case">Trasplante de cicatrices</div>
+                                    <div class="content-text">
+                                        Es posible sembrar folículos sobre casi cualquier
+                                        cicatriz (quemaduras, radiación, trauma, otras cirugías, etc).
+                                    </div>
+                                    <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png" alt="arrow">
+                                    </a>
+                                </div>
+                                <div class="part2  col-12 col-md-6">
+                                    <img src="./img/t3.png" alt="Trasplante de pelo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div id="slide containder">
+                            <div id="case" class="row">
+                                <div class="part1 col-md-6 col-12">
+                                    <div class="puntos">
+                                        <div class="punto "></div>
+                                        <div class="punto"></div>
+                                        <div class="punto"></div>
+                                        <div class="punto point-active"></div>
+                                    </div>
+                                    <div class="title-orange">Nuestros trasplantes</div>
+                                    <div class="title-case">Trasplante en mujeres</div>
+                                    <div class="content-text">
+                                        El pelo para la mujer es factor primordial de su apariencia fisica, la mayoría
+                                        de
+                                        mujeres tienen una aclaración difusa o dispersa sobre todas las áreas del cuero
+                                        cabelludo y aún no lo saben.
+                                    </div>
+                                    <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png" alt="arrow">
+                                    </a>
+                                </div>
+                                <div class="part2 col-md-6 col-12">
+                                    <img src="./img/t4.png" alt="Trasplante de pelo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+        <div class="row container-slider-2" id="carrusel2">
+
+            <div class="container-carousel">
+                <div class="row">
+
+
+                    <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div id="slide">
+                                    <div id="case">
+                                        <div class="row">
+                                            <div class="part2a col-12 col-md-6">
+                                                <img src="./img/ts1.png" alt="Trasplante de pelo">
+                                            </div>
+                                            <div class="part1 col-12 col-md-6">
+                                                <div class="puntos">
+                                                    <div class="punto point-active"></div>
+                                                    <div class="punto"></div>
+                                                    <div class="punto"></div>
+                                                    <div class="punto"></div>
+                                                </div>
+                                                <div class="title-orange">Nuestros trasplantes</div>
+                                                <div class="title-case">Tratamientos no quirúrgicos</div>
+                                                <div class="content-text">
+                                                    La oferta de productos para la caída del cabello son casi infinitos!
+                                                    Sin
+                                                    embargo muy pocos tienen evidencia científica de su efectividad: Los
+                                                    únicos
+                                                    medicamentos aprobados por la FDA son la Finasterida, el Minoxidil y
+                                                    recientemente la Dutasterida.
+                                                </div>
+                                                <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png"
+                                                        alt="arrow">
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div id="slide2 containder">
+                                    <div id="case" class="row">
+                                        <div class="part2a col-md-6 col-12">
+                                            <img src="./img/ts2.png" class="img-fluid" alt="Trasplante de pelo">
+                                        </div>
+                                        <div class="part1 col-md-6 col-12">
+                                            <div class="puntos">
+                                                <div class="punto "></div>
+                                                <div class="punto point-active"></div>
+                                                <div class="punto"></div>
+                                                <div class="punto"></div>
+                                            </div>
+                                            <div class="title-orange">Nuestros trasplantes</div>
+                                            <div class="title-case">Trasplante en mujeres</div>
+                                            <div class="content-text">
+                                                El pelo para la mujer es factor primordial de su apariencia fisica, la
+                                                mayoría
+                                                de
+                                                mujeres tienen una aclaración difusa o dispersa sobre todas las áreas
+                                                del
+                                                cuero
+                                                cabelludo y aún no lo saben.
+                                            </div>
+                                            <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png"
+                                                    alt="arrow">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div id="slide2 containder">
+                                    <div id="case" class="row">
+                                        <div class="part2a col-md-6 col-12">
+                                            <img src="./img/ts3.png" class="img-fluid" alt="Trasplante de pelo">
+                                        </div>
+                                        <div class="part1 col-md-6 col-12">
+                                            <div class="puntos">
+                                                <div class="punto "></div>
+                                                <div class="punto"></div>
+                                                <div class="punto point-active"></div>
+                                                <div class="punto"></div>
+                                            </div>
+                                            <div class="title-orange">Nuestros trasplantes</div>
+                                            <div class="title-case">Micropigmentación capilar SMP</div>
+                                            <div class="content-text">
+                                                Los tatuajes se utilizan principalmente en cicatrices y buscan
+                                                disimularlas dibujando por imitación el color y dirección del pelo.
+                                            </div>
+                                            <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png"
+                                                    alt="arrow">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#carouselExampleControls2" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls2" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> <!-- fin carruseles -->
+
+    <div class="container-fluid">
+        <div class="row  opiniones-clientes">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="nuestros-clientes-title">Nuestros clientes lo confirman</h3>
+                </div>
+            </div>
+            <div class="container cajas-testimonios">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <div class="caja-testimonio">
+                            <p>“He recuperado mi cabello y he borrado una cicatriz de mi vida”</p>
+                            <img src="./img/testimonios.png" alt="arrow">
+                        </div>
+                        <div class="dato-testimonio">
+                            <img src="./img/Picture.png" alt="" class="user-testimonio">
+                            <h4>Huveymar Piraquive</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="caja-testimonio">
+                            <p>“Mi resultado, es la prueba que el trasplante si funciona”</p>
+                            <img src="./img/testimonios.png" alt="arrow">
+                        </div>
+                        <div class="dato-testimonio">
+                            <img src="./img/Picture.png" alt="" class="user-testimonio">
+                            <h4>Carlos Deutsch</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="caja-testimonio">
+                            <p>
+                                “La mejor decisión que pude tomar para mi imagen personal”
+                            </p>
+                            <img src="./img/testimonios.png" alt="arrow">
+                        </div>
+                        <div class="dato-testimonio">
+                            <img src="./img/Picture.png" alt="" class="user-testimonio">
+                            <h4>Rodrigo Plata</h4>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div id="slide">
-                    <div id="case">
-                        <div class="part1">
-                            <div class="puntos">
-                                <div class="punto "></div>
-                                <div class="punto point-active"></div>
-                                <div class="punto"></div>
-                                <div class="punto"></div>
-                            </div>
-                            <div class="title-orange">Nuestros trasplantes</div>
-                            <div class="title-case">Trasplante de barba</div>
-                            <div class="content-text">
-                                Luce una barba como siempre la has deseado de forma natural y definitiva
-                            </div>
-                            <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png" alt="arrow"> </a>
-                        </div>
-                        <div class="part2">
-                            <img src="./img/t2.png" alt="Trasplante de pelo">
-                        </div>
+        </div>
+    </div>
+
+    <div id="trayectoria" class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h3>
+                    Llevamos 20 años resolviendo el problema de pérdida de pelo en hombres y mujeres.
+                </h3>
+                <p>
+                    Para el equipo de HairDoctors es un orgullo y un compromiso poder ser parte de ese gran cambio.
+                    <br>
+                    <span> ¡Vas a recuperar mucho más que tu pelo, Bienvenido!</span>
+                </p>
+                <button>Quiero agendar mi cita</button>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="./img/doctor.png" alt="doctor" class="img-doctor">
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-9 text-footer">
+                <img src="./img/logo-2.png" alt="" class="logo2">
+                <div class="row mt-2">
+                    <div class="col-1"><img src="./img/gris-instagram.png" alt="" class="iconos-grises"></div>
+                    <div class="col-1"><img src="./img/gris-face.png" alt="" class="iconos-grises"></div>
+                </div>
+                <div class="row datos-de-contacto">
+                    <div class="col-2 telefono"> <img src="./img/G3.png" alt="" class="icons-contact"> <span>+57
+                            3214073265</span>
+                    </div>
+                    <div class="col-3 email"><img src="./img/G2.png" alt="" class="icons-contact">
+                        <span>
+                            info@hairdoctors.com.co
+                        </span>
+                    </div>
+                    <div class="col-4 direccion"><img src="./img/G1.png" alt="" class="icons-contact">
+                        <span>
+                            Calle 108 No. 17A – 68 - Bogotá
+                        </span>
+                    </div>
+                </div>
+                <div class="row copy-r">
+                    <div class="col-md-12">
+                        <p>© 2021 Todos los derechos reservados. Hair Doctors</p>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div id="slide">
-                    <div id="case">
-                        <div class="part1">
-                            <div class="puntos">
-                                <div class="punto "></div>
-                                <div class="punto"></div>
-                                <div class="punto point-active"></div>
-                                <div class="punto"></div>
-                            </div>
-                            <div class="title-orange">Nuestros trasplantes</div>
-                            <div class="title-case">Trasplante de cicatrices</div>
-                            <div class="content-text">
-                                Es posible sembrar folículos sobre casi cualquier cicatriz (quemaduras, radiación,
-                                trauma, otras cirugías, etc).
-                            </div>
-                            <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png" alt="arrow"> </a>
-                        </div>
-                        <div class="part2">
-                            <img src="./img/t3.png" alt="Trasplante de pelo">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div id="slide containder">
-                    <div id="case" class="row">
-                        <div class="part1 col-md-6 col-12">
-                            <div class="puntos">
-                                <div class="punto "></div>
-                                <div class="punto"></div>
-                                <div class="punto"></div>
-                                <div class="punto point-active"></div>
-                            </div>
-                            <div class="title-orange">Nuestros trasplantes</div>
-                            <div class="title-case">Trasplante en mujeres</div>
-                            <div class="content-text">
-                                El pelo para la mujer es factor primordial de su apariencia fisica, la mayoría de
-                                mujeres tienen una aclaración difusa o dispersa sobre todas las áreas del cuero
-                                cabelludo y aún no lo saben.
-                            </div>
-                            <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png" alt="arrow"> </a>
-                        </div>
-                        <div class="part2 col-md-6 col-12">
-                            <img src="./img/t4.png" alt="Trasplante de pelo">
-                        </div>
-                    </div>
-                </div>
+            <div class="col-3 d-flex justify-content-end ">
+                <img src="./img/figura1.png" alt="" class="figura1">
             </div>
         </div>
+    </footer>
 
-
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
-    </div>
-
-    <!--   <div id="slide1">
-        <div id="case1">
-            <div class="part1">
-                <div class="puntos">
-                    <div class="punto active"></div>
-                    <div class="punto"></div>
-                    <div class="punto"></div>
-                    <div class="punto"></div>
-                </div>
-                <div class="title-orange">Nuestros trasplantes</div>
-                <div class="title-case">Trasplante capilar de pelo FUE</div>
-                <div class="content-text">
-                    El trasplante de unidades foliculares es un procedimiento ambulatorio y con
-                    anestesia local.
-                </div>
-                <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png" alt="arrow"> </a>
-            </div>
-            <div class="part2">
-                <img src="./img/t1.png" alt="Trasplante de pelo">
-            </div>
-        </div>
-    </div>
-    <div id="slide2">
-        <p>slide 2</p>
-        <h3>Nuestros clientes lo confirman </h3>
-    </div>
-    <div id="agendar">
-        <div id="agendar-text">
-            <h4>Llevamos 15 años resolviendo el problema de pérdida de pelo en hombres y mujeres.</h4>
-            <p>Agenda una cita con nosotros, disfruta de la apariencia que siempre has deseado y retrasa el paso de
-                manera natural gracias a nuestras soluciones definitivas.</p>
-            <button>Quiero agendar mi cita</button>
-        </div>
-        <div id="agendar-img">
-            <img src="" alt="">
-        </div>
-    </div>
-
-
-    <div id="caso1">
-        <div id="case1">
-            <div class="part1">
-                <div class="puntos">
-                    <div class="punto active"></div>
-                    <div class="punto"></div>
-                    <div class="punto"></div>
-                    <div class="punto"></div>
-                </div>
-                <div class="title-orange">Nuestros trasplantes</div>
-                <div class="title-case">Trasplante capilar de pelo FUE</div>
-                <div class="content-text">
-                    El trasplante de unidades foliculares es un procedimiento ambulatorio y con
-                    anestesia local.
-                </div>
-                <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png" alt="arrow"> </a>
-            </div>
-            <div class="part2">
-                <img src="./img/t1.png" alt="Trasplante de pelo">
-            </div>
-        </div>
-    </div>
- -->
-
-
+    <!-- 
     <footer>
         <div id="footer-1"></div>
         <div id="footer-2"></div>
         <div id="footer-3"></div>
-    </footer>
+    </footer> -->
 
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./main.js">
+    <link rel="stylesheet" href="./main.css">
 </body>
 
 </html>
