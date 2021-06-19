@@ -12,6 +12,8 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -21,27 +23,45 @@
 </head>
 
 <body>
-    <!-- <nav>
-        <img src="./img/logo-1.png" alt="Hair doctors" id="logo">
+    <div class="nav-web " style="z-index: 10;">
+        <img src="./img2/logo-1.png" alt="Hair doctors" id="logo" class="over-mouse">
         <ul>
-            <li>Nuestros trasplantes</li>
-            <li>Testimonios</li>
-            <li>Contáctanos</li>
+            <li class="over-mouse"><a href="#carouselExampleControls">Nuestros trasplantes</a></li>
+            <li class="over-mouse"><a href="#carrusel2">Nuestros tratamientos</a></li>
+            <li class="over-mouse"><a href="#bloque-testimonios">Testimonios</a></li>
+            <li class="over-mouse"><a href="#contactanos">Contáctanos</a></li>
+
         </ul>
+
         <div id="btn-contacts">
-            <button class="btn" id="phone-call"> <img src="./img/phone.png">
-                <p>Llámanos</p>
+            <button class="btn" id="phone-call"> <img src="./img2/phone.png">
+                <a href="tel:+573214073265" style="text-decoration: none;color: gray;">
+                    <p> Llámanos </p>
+                </a>
             </button>
-            <button class="btn" id="whatsapp-btn"> <img src="./img/whatsapp.png" alt="">
-                <p>WhatsApp</p>
+            <button class="btn" id="whatsapp-btn"> <img src="./img2/whatsapp.png" alt="">
+                <a href="https://api.whatsapp.com/send?phone=573214073265&text=Deseo%20mas%20informaci%C3%B3n%20">
+                    <p>WhatsApp</p>
+                </a>
             </button>
         </div>
-    </nav> -->
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="./img/logo-1.png" alt="Hair doctors" id="logo"></a>
+        <a class="navbar-brand" href="#"><img src="./img2/logo-1.png" alt="Hair doctors" id="logo"></a>
         <div id="btn-contacts">
-
-
+        </div>
+        <div id="btn-contacts-movil">
+            <button class="btn" id="phone-call-movil"> <img src="./img2/phone.png">
+                <a href="tel:+573214073265" style="text-decoration: none;color: gray;">
+                    <p> Llámanos </p>
+                </a>
+            </button>
+            <button class="btn" id="whatsapp-btn-movil"> <img src="./img2/whatsapp.png" alt="">
+                <a href="https://api.whatsapp.com/send?phone=573214073265&text=Deseo%20mas%20informaci%C3%B3n%20">
+                    <p>WhatsApp</p>
+                </a>
+            </button>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,34 +76,25 @@
                 <li class="nav-item  ">
                     <a class="nav-link" href="#carrusel2">Nuestros tratamientos </a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#">Testimonios </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#">Contáctanos </a>
-                </li>
-                <li class="nav-item active " class="icon-llamanos">
-                    <button class="btn" id="phone-call"> <img src="./img/phone.png">
-                        <p>Llámanos</p>
-                    </button>
-                </li>
-                <li class="nav-item ">
-                    <button class="btn" id="whatsapp-btn"> <img src="./img/whatsapp.png" alt="">
-                        <p>WhatsApp</p>
-                    </button>
-                </li>
 
-
+                <li class="nav-item ">
+                    <a class="nav-link" href="#bloque-testimonios">Testimonios </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#contactanos">Contáctanos </a>
+                </li>
             </ul>
         </div>
     </nav>
 
 
 
-    <header class="container-fluid">
+    <header class="container-fluid" style="z-index: 1;">
         <div class="row">
-            <img src="./img/banner1.png" alt="" id="img-header" class="col-md-6 col-12 pl-0 img-fluid">
-            <div id="form-container col-md-4 col-12 ">
+            <div class="col-md-8 pl-0">
+                <img src="./img2/banner1.png" alt="" id="img-header" class=" img-fluid">
+            </div>
+            <div id="form-container" class="col-md-3 col-12">
                 <div class="form ">
                     <h2 class="title-orange-h2">Con nuestra ayuda recuperarás <br> mucho más que tu pelo</h2>
                     <hr class="line-gray">
@@ -92,7 +103,7 @@
                     <input type="email" name="email" placeholder="E-mail">
                     <input type="phone" name="phone" placeholder="Teléfono">
                     <div id="terminos">
-                        <img src="./img/check.png" alt="" id="icon-terms">
+                        <img src="./img2/check.png" alt="" id="icon-terms">
                         <p class="terminos-text"> Acepto los <span class="text-orange">términos y condiciones</span>
                             y
                             autorizo el tratamiento de datos personales.</p>
@@ -102,8 +113,9 @@
             </div>
         </div>
     </header>
-    <div class="container-fluid">
-        <!-- carruseles -->
+
+    <div class="container-fluid carruseles">
+
         <div class="row">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -124,12 +136,12 @@
                                             El trasplante de unidades foliculares es un procedimiento ambulatorio y con
                                             anestesia local.
                                         </div>
-                                        <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png"
+                                        <a href="#" id="icon-arrow">Quiero saber más <img src="./img2/row.png"
                                                 alt="arrow">
                                         </a>
                                     </div>
                                     <div class="part2 col-12 col-md-6">
-                                        <img src="./img/t1.png" alt="Trasplante de pelo">
+                                        <img src="./img2/t1.png" alt="Trasplante de pelo">
                                     </div>
                                 </div>
                             </div>
@@ -152,12 +164,12 @@
                                         <div class="content-text">
                                             Luce una barba como siempre la has deseado de forma natural y definitiva
                                         </div>
-                                        <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png"
+                                        <a href="#" id="icon-arrow">Quiero saber más <img src="./img2/row.png"
                                                 alt="arrow">
                                         </a>
                                     </div>
                                     <div class="part2 col-md-6">
-                                        <img src="./img/t2.png" alt="Trasplante de pelo">
+                                        <img src="./img2/t2.png" alt="Trasplante de pelo">
                                     </div>
                                 </div>
                             </div>
@@ -181,11 +193,11 @@
                                         Es posible sembrar folículos sobre casi cualquier
                                         cicatriz (quemaduras, radiación, trauma, otras cirugías, etc).
                                     </div>
-                                    <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png" alt="arrow">
+                                    <a href="#" id="icon-arrow">Quiero saber más <img src="./img2/row.png" alt="arrow">
                                     </a>
                                 </div>
                                 <div class="part2  col-12 col-md-6">
-                                    <img src="./img/t3.png" alt="Trasplante de pelo">
+                                    <img src="./img2/t3.png" alt="Trasplante de pelo">
                                 </div>
                             </div>
                         </div>
@@ -208,11 +220,11 @@
                                         mujeres tienen una aclaración difusa o dispersa sobre todas las áreas del cuero
                                         cabelludo y aún no lo saben.
                                     </div>
-                                    <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png" alt="arrow">
+                                    <a href="#" id="icon-arrow">Quiero saber más <img src="./img2/row.png" alt="arrow">
                                     </a>
                                 </div>
                                 <div class="part2 col-md-6 col-12">
-                                    <img src="./img/t4.png" alt="Trasplante de pelo">
+                                    <img src="./img2/t4.png" alt="Trasplante de pelo">
                                 </div>
                             </div>
                         </div>
@@ -234,16 +246,14 @@
 
             <div class="container-carousel">
                 <div class="row">
-
-
                     <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div id="slide">
                                     <div id="case">
                                         <div class="row">
-                                            <div class="part2a col-12 col-md-6">
-                                                <img src="./img/ts1.png" alt="Trasplante de pelo">
+                                            <div class="part2a col-12 col-md-6 ">
+                                                <img src="./img2/ts1.png" alt="Trasplante de pelo">
                                             </div>
                                             <div class="part1 col-12 col-md-6">
                                                 <div class="puntos">
@@ -252,7 +262,7 @@
                                                     <div class="punto"></div>
                                                     <div class="punto"></div>
                                                 </div>
-                                                <div class="title-orange">Nuestros trasplantes</div>
+                                                <div class="title-orange">Nuestros tratamientos</div>
                                                 <div class="title-case">Tratamientos no quirúrgicos</div>
                                                 <div class="content-text">
                                                     La oferta de productos para la caída del cabello son casi infinitos!
@@ -262,7 +272,7 @@
                                                     medicamentos aprobados por la FDA son la Finasterida, el Minoxidil y
                                                     recientemente la Dutasterida.
                                                 </div>
-                                                <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png"
+                                                <a href="#" id="icon-arrow">Quiero saber más <img src="./img2/row.png"
                                                         alt="arrow">
                                                 </a>
                                             </div>
@@ -275,7 +285,7 @@
                                 <div id="slide2 containder">
                                     <div id="case" class="row">
                                         <div class="part2a col-md-6 col-12">
-                                            <img src="./img/ts2.png" class="img-fluid" alt="Trasplante de pelo">
+                                            <img src="./img2/ts2.png" class="img-fluid" alt="Trasplante de pelo">
                                         </div>
                                         <div class="part1 col-md-6 col-12">
                                             <div class="puntos">
@@ -284,18 +294,12 @@
                                                 <div class="punto"></div>
                                                 <div class="punto"></div>
                                             </div>
-                                            <div class="title-orange">Nuestros trasplantes</div>
-                                            <div class="title-case">Trasplante en mujeres</div>
+                                            <div class="title-orange">Nuestros tratamientos</div>
+                                            <div class="title-case">Medicamentos</div>
                                             <div class="content-text">
-                                                El pelo para la mujer es factor primordial de su apariencia fisica, la
-                                                mayoría
-                                                de
-                                                mujeres tienen una aclaración difusa o dispersa sobre todas las áreas
-                                                del
-                                                cuero
-                                                cabelludo y aún no lo saben.
+                                                Aprobados por la FDA, para prevenir, cuidar y engrosar el cabello.
                                             </div>
-                                            <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png"
+                                            <a href="#" id="icon-arrow">Quiero saber más <img src="./img2/row.png"
                                                     alt="arrow">
                                             </a>
                                         </div>
@@ -306,7 +310,7 @@
                                 <div id="slide2 containder">
                                     <div id="case" class="row">
                                         <div class="part2a col-md-6 col-12">
-                                            <img src="./img/ts3.png" class="img-fluid" alt="Trasplante de pelo">
+                                            <img src="./img2/ts3.png" class="img-fluid" alt="Trasplante de pelo">
                                         </div>
                                         <div class="part1 col-md-6 col-12">
                                             <div class="puntos">
@@ -321,7 +325,35 @@
                                                 Los tatuajes se utilizan principalmente en cicatrices y buscan
                                                 disimularlas dibujando por imitación el color y dirección del pelo.
                                             </div>
-                                            <a href="#" id="icon-arrow">Quiero saber más <img src="./img/row.png"
+                                            <a href="#" id="icon-arrow">Quiero saber más <img src="./img2/row.png"
+                                                    alt="arrow">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div id="slide2 containder">
+                                    <div id="case" class="row">
+                                        <div class="part2a col-md-6 col-12">
+                                            <img src="./img2/ts4.png" class="img-fluid " alt="Trasplante de pelo">
+                                        </div>
+                                        <div class="part1 col-md-6 col-12">
+                                            <div class="puntos">
+                                                <div class="punto "></div>
+                                                <div class="punto"></div>
+                                                <div class="punto"></div>
+                                                <div class="punto point-active"></div>
+                                            </div>
+                                            <div class="title-orange">Nuestros tratamientos</div>
+                                            <div class="title-case">Tratamiento de Plasma Rico en Plaquetas (PRP)</div>
+                                            <div class="content-text">
+                                                Este tratamiento se realiza obteniendo sangre del paciente para extraer
+                                                los factores de crecimiento que poseen las plaquetas. Estas plaquetas se
+                                                activan y se inyectan en el cuero cabelludo donde actúan hasta por 6
+                                                meses.
+                                            </div>
+                                            <a href="#" id="icon-arrow">Quiero saber más <img src="./img2/row.png"
                                                     alt="arrow">
                                             </a>
                                         </div>
@@ -347,32 +379,32 @@
         </div>
     </div> <!-- fin carruseles -->
 
-    <div class="container-fluid">
+    <div class="container-fluid bloque-testimonios" id="bloque-testimonios">
         <div class="row  opiniones-clientes">
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="nuestros-clientes-title">Nuestros clientes lo confirman</h3>
-                </div>
+
+            <div class="col-12 w-100">
+                <h3 class="nuestros-clientes-title">Nuestros clientes lo confirman</h3>
             </div>
+
             <div class="container cajas-testimonios">
                 <div class="row">
                     <div class="col-md-4 ">
                         <div class="caja-testimonio">
                             <p>“He recuperado mi cabello y he borrado una cicatriz de mi vida”</p>
-                            <img src="./img/testimonios.png" alt="arrow">
+                            <img src="./img2/testimonios.png" alt="arrow">
                         </div>
                         <div class="dato-testimonio">
-                            <img src="./img/Picture.png" alt="" class="user-testimonio">
+                            <img src="./img2/Picture.png" alt="" class="user-testimonio">
                             <h4>Huveymar Piraquive</h4>
                         </div>
                     </div>
                     <div class="col-md-4 ">
                         <div class="caja-testimonio">
                             <p>“Mi resultado, es la prueba que el trasplante si funciona”</p>
-                            <img src="./img/testimonios.png" alt="arrow">
+                            <img src="./img2/testimonios.png" alt="arrow">
                         </div>
                         <div class="dato-testimonio">
-                            <img src="./img/Picture.png" alt="" class="user-testimonio">
+                            <img src="./img2/Picture.png" alt="" class="user-testimonio">
                             <h4>Carlos Deutsch</h4>
                         </div>
                     </div>
@@ -381,10 +413,10 @@
                             <p>
                                 “La mejor decisión que pude tomar para mi imagen personal”
                             </p>
-                            <img src="./img/testimonios.png" alt="arrow">
+                            <img src="./img2/testimonios.png" alt="arrow">
                         </div>
                         <div class="dato-testimonio">
-                            <img src="./img/Picture.png" alt="" class="user-testimonio">
+                            <img src="./img2/Picture.png" alt="" class="user-testimonio">
                             <h4>Rodrigo Plata</h4>
                         </div>
                     </div>
@@ -393,43 +425,134 @@
         </div>
     </div>
 
-    <div id="trayectoria" class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <h3>
-                    Llevamos 20 años resolviendo el problema de pérdida de pelo en hombres y mujeres.
-                </h3>
-                <p>
-                    Para el equipo de HairDoctors es un orgullo y un compromiso poder ser parte de ese gran cambio.
-                    <br>
-                    <span> ¡Vas a recuperar mucho más que tu pelo, Bienvenido!</span>
-                </p>
-                <button>Quiero agendar mi cita</button>
+    <div class="container-fluid bloque-testimonios-movil">
+        <div class="row  opiniones-clientes">
+
+            <div class="col-12 w-100">
+                <h3 class="nuestros-clientes-title-movil">Nuestros clientes lo confirman</h3>
             </div>
-            <div class="col-12 col-md-6">
-                <img src="./img/doctor.png" alt="doctor" class="img-doctor">
+            <div class="col-12">
+                <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="col-md-4 ">
+                                <div class="caja-testimonio">
+                                    <p>“He recuperado mi cabello y he borrado una cicatriz de mi vida”</p>
+                                    <img src="./img2/testimonios.png" alt="arrow">
+                                </div>
+                                <div class="dato-testimonio">
+                                    <img src="./img2/Picture.png" alt="" class="user-testimonio">
+                                    <h4>Huveymar Piraquive</h4>
+                                </div>
+
+                            </div>
+
+                            <div class="puntos-movil ">
+                                <div class="punto point-active"></div>
+                                <div class="punto"></div>
+                                <div class="punto"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item ">
+                            <div class="col-md-4 ">
+                                <div class="caja-testimonio">
+                                    <p>“Mi resultado, es la prueba que el trasplante si funciona”</p>
+                                    <img src="./img2/testimonios.png" alt="arrow">
+                                </div>
+                                <div class="dato-testimonio">
+                                    <img src="./img2/Picture.png" alt="" class="user-testimonio">
+                                    <h4>Carlos Deutsch</h4>
+                                </div>
+                            </div>
+                            <div class="puntos-movil ">
+                                <div class="punto"></div>
+                                <div class="punto point-active"></div>
+                                <div class="punto"></div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ">
+                            <div class="col-md-4 ">
+                                <div class="caja-testimonio">
+                                    <p>
+                                        “La mejor decisión que pude tomar para mi imagen personal”
+                                    </p>
+                                    <img src="./img2/testimonios.png" alt="arrow">
+                                </div>
+                                <div class="dato-testimonio">
+                                    <img src="./img2/Picture.png" alt="" class="user-testimonio">
+                                    <h4>Rodrigo Plata</h4>
+                                </div>
+
+                            </div>
+                            <div class="puntos-movil ">
+                                <div class="punto"></div>
+                                <div class="punto"></div>
+                                <div class="punto point-active"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
             </div>
+
         </div>
     </div>
 
-    <footer class="container-fluid">
+    <div id="trayectoria" class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6 text-trayectoria-contain ">
+                <div class="text-trayectoria">
+                    <h3>
+                        Llevamos 20 años resolviendo el problema de pérdida de pelo en hombres y mujeres.
+                    </h3>
+                    <p>
+                        Para el equipo de HairDoctors es un orgullo y un compromiso poder ser parte de ese gran cambio.
+                        <br>
+                        <span> ¡Vas a recuperar mucho más que tu pelo, Bienvenido!</span>
+                    </p>
+                    <button>Quiero agendar mi cita</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 bg-img-doctor">
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="container-fluid" id="contactanos">
         <div class="row">
             <div class="col-md-9 text-footer">
-                <img src="./img/logo-2.png" alt="" class="logo2">
+                <img src="./img2/logo-2.png" alt="" class="logo2">
                 <div class="row mt-2">
-                    <div class="col-1"><img src="./img/gris-instagram.png" alt="" class="iconos-grises"></div>
-                    <div class="col-1"><img src="./img/gris-face.png" alt="" class="iconos-grises"></div>
+                    <div class="col-1"><img src="./img2/gris-instagram.png" alt="" class="iconos-grises"></div>
+                    <div class="col-1"><img src="./img2/gris-face.png" alt="" class="iconos-grises"></div>
                 </div>
                 <div class="row datos-de-contacto">
-                    <div class="col-2 telefono"> <img src="./img/G3.png" alt="" class="icons-contact"> <span>+57
+                    <div class="col-md-3 col-12 casilla telefono"> <img src="./img2/G3.png" alt=""
+                            class="icons-contact">
+                        <span>+57
                             3214073265</span>
                     </div>
-                    <div class="col-3 email"><img src="./img/G2.png" alt="" class="icons-contact">
+                    <div class="col-md-3 col-12 casilla email"><img src="./img2/G2.png" alt="" class="icons-contact">
                         <span>
                             info@hairdoctors.com.co
                         </span>
                     </div>
-                    <div class="col-4 direccion"><img src="./img/G1.png" alt="" class="icons-contact">
+                    <div class="col-md-4 col-12 casilla direccion"><img src="./img2/G1.png" alt=""
+                            class="icons-contact">
                         <span>
                             Calle 108 No. 17A – 68 - Bogotá
                         </span>
@@ -441,21 +564,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 d-flex justify-content-end ">
-                <img src="./img/figura1.png" alt="" class="figura1">
+            <div class="col-md-3 d-none d-md-flex justify-content-end figura1-contain ">
+                <img src="./img2/figura1.png" alt="" class="figura1">
             </div>
         </div>
     </footer>
 
-    <!-- 
-    <footer>
-        <div id="footer-1"></div>
-        <div id="footer-2"></div>
-        <div id="footer-3"></div>
-    </footer> -->
 
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./main.js">
     <link rel="stylesheet" href="./main.css">
 </body>
 
