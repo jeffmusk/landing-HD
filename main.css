@@ -578,7 +578,7 @@ footer {
     padding: 0px 0px;
     margin-left: 0px;
     order: 1;
-    margin-top: 70px;
+    margin-top: 10px;
   }
 
   .line-gray {
@@ -641,7 +641,7 @@ footer {
     margin: auto;
     margin-top: 30px;
     width: 96%;
-    padding: 50px 10px;
+    padding: 10px 10px;
     background-color: #fff;
   }
   /* #carouselExampleControls {
@@ -658,14 +658,16 @@ footer {
   }
   .nuestros-clientes-title-movil {
     font-weight: 800;
-    line-height: 64px;
+    line-height: 44px;
     font-size: 30px;
     width: 100%;
     padding-bottom: 20px;
-    padding-top: 50px;
+    padding-top: 10px;
     text-align: center;
   }
-
+  #carouselExampleControls3 {
+    margin-bottom: 20px;
+  }
   .bloque-testimonios-movil {
     display: flex;
   }
@@ -749,6 +751,19 @@ footer {
   }
 
   .copy-r {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+  }
+
+  .part1 {
+    order: 1;
+  }
+  .part2a {
+    order: 2;
+  }
+  .part2 {
+    order: 2;
+  }
+  .bloque-testimonios {
+    display: none;
   }
 }
